@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Parallax Processing</title>
+        <style>
+            body {
+                text-align: center;
+                background: silver;
+            }
+            #parallax-canvas {
+                margin: 20px auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Parallax Processing</h1>
+        Based on <a href="http://www.ibm.com/developerworks/library/wa-parallaxprocessing/" target="_blank">The power of parallax processing, by Kris Hadlock (2012)</a>
+        <p>Code upgraded with some of the best practices of 2019 (API Promise, function Path2D, strict mode, IIFE, etc.)</p>
+        <p>Plus an easing function (of Robert Penner) when clicking on the jeep (for fun)</p>
+        <br>
+        <div id="game"></div>
+        <p>You can use the arrow keys to move the jeep in the 4 directions.</p>
+        <p>You'll find a lot of comments into the Javascript code.</p>
+
+        <script src="assets/js/parallax-processing-v2.js"></script>
+        <script>
+      	  document.addEventListener("DOMContentLoaded", function(event) {
+      			console.log("DOM fully loaded and parsed");
+      			parallaxModule.init();
+      	  });
+      	</script>
+    </body>
+</html>
